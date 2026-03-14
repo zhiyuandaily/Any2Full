@@ -5,10 +5,6 @@
 !*/
 
 # Keep git settings
-!.gitignore
-!.github/
-!.github/workflows/
-!.github/workflows/sync_to_hf.yml
 
 # Keep core files for inference
 !README.md
