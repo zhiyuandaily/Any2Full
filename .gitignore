@@ -4,10 +4,9 @@
 # Keep directories (so we can re-include files)
 !*/
 
-# Keep git settings
-
 # Keep core files for inference
 !README.md
+!LICENSE
 !requirements.sh
 !run_any2full.py
 
@@ -19,8 +18,10 @@
 
 # Keep minimal utils
 !utils/
+utils/**
 !utils/denoise.py
 !utils/__init__.py
 
 # Keep test samples
 !assets/
+!assets/**
