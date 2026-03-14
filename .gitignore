@@ -1,0 +1,30 @@
+# Ignore everything by default
+*
+
+# Keep directories (so we can re-include files)
+!*/
+
+# Keep git settings
+!.gitignore
+!.github/
+!.github/workflows/
+!.github/workflows/sync_to_hf.yml
+
+# Keep core files for inference
+!README.md
+!requirements.sh
+!run_any2full.py
+
+# Keep core model code
+!model/
+!model/ours/
+!model/ours/**
+!model/__init__.py
+
+# Keep minimal utils
+!utils/
+!utils/denoise.py
+!utils/__init__.py
+
+# Keep test samples
+!assets/
