@@ -1,13 +1,4 @@
----
-license: apache-2.0
-tags:
-  - any2full
-  - depth-completion
-  - depth-estimation
-  - computer-vision
-  - image-to-depth
-  - pytorch
----
+
 
 <div align="center">
 <h1>Any to Full: Prompting Depth Anything for Depth Completion in One Stage</h1>
