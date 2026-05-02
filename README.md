@@ -30,18 +30,26 @@ Accurate dense depth is essential for robotics, but commodity RGBD sensors are o
 
 ## Requirements (Minimal for Inference)
 - python==3.9.x
-- torch==2.0.1
-- torchvision==0.17.2
-- numpy
+- torch==2.1.0
+- torchvision==0.16.0
+- numpy<2
 - pillow
 - matplotlib
 - scipy
-- opencv-python
+- opencv-python-headless==4.11.0.86
 
 ```bash
-pip install torch==2.0.1 torchvision==0.17.2 \
-  numpy pillow matplotlib scipy opencv-python
+pip install torch==2.1.0 torchvision==0.16.0 \
+  "numpy<2" pillow matplotlib scipy opencv-python-headless==4.11.0.86
 ```
+
+Optional (`CUDA 12.1`) xFormers acceleration:
+```bash
+pip install xformers==0.0.25.post1 --index-url https://download.pytorch.org/whl/cu121
+```
+
+Notes:
+- If xFormers is not installed, inference still runs normally; only memory/performance optimization is disabled.
 
 ---
 

@@ -1,2 +1,2 @@
-pip install torch==2.0.1 torchvision==0.17.2 \
-  numpy pillow matplotlib scipy opencv-python
+pip install torch==2.1.0 torchvision==0.16.0 \
+  "numpy<2" pillow matplotlib scipy opencv-python-headless==4.11.0.86
