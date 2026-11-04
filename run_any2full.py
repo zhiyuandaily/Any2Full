@@ -118,7 +118,7 @@ def _save_depth_outputs(depth: np.ndarray, out_base: Path, grayscale: bool) -> N
 
 
 def _load_checkpoint(model: Any2Full, ckpt_path: str, device: str) -> Any2Full:
-    checkpoint = torch.load(ckpt_path, map_location=device, weights_only=False)
+    checkpoint = torch.load(ckpt_path, map_location=device, weights_only=True)
     state = checkpoint.get("state_dict", checkpoint)
     cleaned = OrderedDict((k.replace("module.", ""), v) for k, v in state.items())
     model.load_state_dict(cleaned, strict=True)
